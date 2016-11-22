@@ -1,4 +1,5 @@
 public class ReTreatment {
+    //New New New
     Treatment treatment = new Treatment();
     MiniPoker miniPoker = new MiniPoker();
 
@@ -10,7 +11,7 @@ public class ReTreatment {
         treatment.treatmentWhite(MiniPoker.cardInHandWhite);
         treatment.treatmentBlack(MiniPoker.cardInHandBlack);
         treatment.combinations();
-        ////ПРоверяем кто из игроков выиграл
+        //ПРоверяем кто из игроков выиграл
         if (treatment.resultWhite > treatment.resultBlack){
             howWin = "White Gamer is won\nHe have combination: " + treatment.combinations.get(treatment.resultWhite);
         }else if (treatment.resultWhite < treatment.resultBlack){

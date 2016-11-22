@@ -1,9 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Solush on 18.11.2016.
- */
 public class Treatment {
     Map<Integer, String> combinations = new HashMap<Integer, String>();
     public void combinations(){
