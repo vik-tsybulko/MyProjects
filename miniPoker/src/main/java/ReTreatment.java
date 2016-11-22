@@ -1,5 +1,4 @@
 public class ReTreatment {
-    //New New New
     Treatment treatment = new Treatment();
     MiniPoker miniPoker = new MiniPoker();
 
