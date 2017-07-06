@@ -1,0 +1,37 @@
+<project name="HelloAnt" default="deploy">
+	
+	<property name="dest" value="./classes"/>
+	
+	<property file="build.properties"/>
+	
+	<tstamp/>
+	
+	<target name="build" depends="clean, init">
+		<echo message="${hello.message} ${TODAY}"/>
+		<mkdir dir="${dest}"/>
+		<javac srcdir="${src.dir}" destdir="${dest}" />	
+		<java classname="hello.ant.Hello" classpath="${dest}"></java>
+	</target>
+	
+	<target name="hello">
+		<echo message="Target hello hello"/>
+	</target>
+	
+	<target name="init">
+		<mkdir dir="${dest}"/>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${dest}"></delete>
+	</target>
+	
+	<target name="deploy" depends="build">
+		<mkdir dir="./deploy"/>
+		<copy todir="./deploy">
+			<fileset dir="${dest}">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+	</target>
+
+</project>

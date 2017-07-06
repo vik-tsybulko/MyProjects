@@ -1,0 +1,18 @@
+<project name="HelloAnt" default="build">
+
+	<target name="build" depends="clean, init">
+		<echo message="Hello Ant"/>
+		<mkdir dir="./classes"/>
+		<javac srcdir="./src" destdir="./classes" />	
+		<java classname="hello.ant.Hello" classpath="./classes"></java>
+	</target>
+	<target name="hello">
+		<echo message="Target hello hello"/>
+	</target>
+	<target name="init">
+		<mkdir dir="./classes"/>
+	</target>
+	<target name="clean">
+		<delete dir="./classes"></delete>
+	</target>
+</project>

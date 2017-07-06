@@ -1,0 +1,6 @@
+.idea/
+src/
+*.iml
+*.txt
+target/**/*.class
+target/

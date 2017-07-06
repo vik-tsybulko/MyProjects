@@ -5,6 +5,18 @@ public class MiniPoker {
     public static int[] cardInHandBlack = new int[5];
 
     public static void main(String[] args) {
+        //Заполнили массив для временной работы(пока проект в разработке для быстрой проверки работоспособности
+        cardInHandWhite[0] = 1;
+        cardInHandWhite[1] = 1;
+        cardInHandWhite[2] = 1;
+        cardInHandWhite[3] = 1;
+        cardInHandWhite[4] = 3;
+
+        cardInHandBlack[0] = 1;
+        cardInHandBlack[1] = 1;
+        cardInHandBlack[2] = 1;
+        cardInHandBlack[3] = 1;
+        cardInHandBlack[4] = 2;
 
         Treatment treatment = new Treatment();
         ReTreatment reTreatment = new ReTreatment();
@@ -14,16 +26,16 @@ public class MiniPoker {
         Scanner scanner = new Scanner(System.in);
 
         //Даем пользователю возможность ввести карты оппонентов
-        for (int i = 0; i < cardInHandWhite.length; i++) {
-            System.out.println("Write card for White #" + (i + 1));
-            cardInHandWhite[i] = scanner.nextInt();
-        }
-        for (int i = 0; i < cardInHandBlack.length; i++){
-
-            System.out.println("Write card for Black #" + (i + 1));
-            cardInHandBlack[i] = scanner.nextInt();
-
-        }
+//        for (int i = 0; i < cardInHandWhite.length; i++) {
+//            System.out.println("Write card for White #" + (i + 1));
+//            cardInHandWhite[i] = scanner.nextInt();
+//        }
+//        for (int i = 0; i < cardInHandBlack.length; i++){
+//
+//            System.out.println("Write card for Black #" + (i + 1));
+//            cardInHandBlack[i] = scanner.nextInt();
+//
+//        }
         //Выводим в консоль какие карты находятся у белого игрока
         System.out.print("White Gamer have a Cards: ");
         for (int i = 0; i < cardInHandWhite.length; i++){

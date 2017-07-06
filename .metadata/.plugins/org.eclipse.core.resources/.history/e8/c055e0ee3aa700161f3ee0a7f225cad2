@@ -1,0 +1,9 @@
+<project name="HelloAnt" default="build">
+
+	<target name="build">
+		<echo message="Hello Ant"/>
+		<mkdir dir="./classes"/>
+		<javac srcdir="./src" destdir="./classes" />	
+		<java classname="hello.ant.Hello" classpath="./classes"></java>
+	</target>
+</project>
